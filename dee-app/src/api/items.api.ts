@@ -1,4 +1,4 @@
-import {Item, ItemForm, Items} from '../types/items.type';
+import {Item, Items} from '../types/items.type';
 import http from './axiosConfig';
 
 export const getItemsApi = async (data: {
@@ -13,5 +13,3 @@ export const getItemsApi = async (data: {
   });
 export const getDetailApi = async (id: string | number) =>
   await http.get<Item>(`items/${id}`);
-export const addNewItemApi = async (student: ItemForm) =>
-  await http.post<Item>('items', student);

@@ -34,12 +34,21 @@ const ListScreen = ({navigation}: any) => {
     dispatch(fetchListItem({params}));
   };
 
+  /**
+   * Handle pull-to-refresh functionality
+   * @returns
+   */
   const handleRefresh = () => getDataItems();
 
   const handleItemPress = (item: Item) => () => {
     navigation.push(ScreenNames.DETAIL, {_id: item._id});
   };
 
+  /**
+   * Get items from next page when the end of the list is reached
+   * If the current data is empty, the api call will not be triggered
+   * @returns
+   */
   const handleEndReached = () => {
     if (isEmpty(dataItems.items)) {
       return;

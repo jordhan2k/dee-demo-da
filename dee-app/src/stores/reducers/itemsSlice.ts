@@ -27,6 +27,13 @@ const itemsSlice = createSlice({
         state.isLoadingMore = true;
       }
     },
+    /**
+     * If the item list api is triggered for the first time or the target page is 1,
+     * the "dataItems.items" state is overwritten by the data coming from the api.
+     * Otherwise, if the page is greater than 1,
+     * data coming from api is concatenated to the existing "dataItems.items" state.
+     * The "dataItems.currentPage" will be updated only if the data incoming is not empty.
+     */
     fetchListItemSucceed: (state, action) => {
       state.isLoading = false;
       state.isLoadingMore = false;
