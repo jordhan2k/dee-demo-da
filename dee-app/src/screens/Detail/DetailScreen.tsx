@@ -63,6 +63,7 @@ const DetailScreen = ({navigation}: any) => {
         ) : null}
         {!isEmpty(dataDetail) ? (
           <ScrollView
+            contentContainerStyle={styles.scrollView}
             refreshControl={
               <RefreshControl
                 onRefresh={() => handleRefresh()}

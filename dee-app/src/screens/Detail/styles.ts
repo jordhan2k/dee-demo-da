@@ -4,10 +4,12 @@ import {Fonts} from '../../enums/styles';
 
 export default StyleSheet.create({
   container: {
-    paddingHorizontal: 16,
     paddingBottom: 16,
     flex: 1,
     width: '100%',
+  },
+  scrollView: {
+    paddingHorizontal: 16,
   },
   itemName: {
     fontFamily: Fonts.SEMI_BOLD,
