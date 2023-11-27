@@ -13,7 +13,11 @@ const list = async (req, res) => {
     limit: limit && limit,
     page: page || 1,
     customLabels,
-    pagination: page || 10
+    pagination: page || 10,
+    lean: true,
+    sort: {
+      updatedAt: -1
+    }
   };
   const conditions = {}
   try {
@@ -40,6 +44,12 @@ const getOne = async (req, res) => {
       _id: req.params.id
     }
     const byId = await Items.findOne(conditions)
+    if (isEmpty(byId)) {
+      return res.json({
+        success: false,
+        message: 'Item not found'
+      })
+    }
     return res.json({
       success: true,
       data: byId

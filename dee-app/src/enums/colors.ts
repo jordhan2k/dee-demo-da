@@ -1,1 +1,117 @@
-export enum Colors {}
+export enum Colors {
+  // NEUTRAL
+  NEUTRAL_50 = '#F9FAFB',
+  NEUTRAL_100 = '#F2F4F7',
+  NEUTRAL_200 = '#EAEDF0',
+  NEUTRAL_300 = '#D0D6DD',
+  NEUTRAL_400 = '#98A4B3',
+  NEUTRAL_500 = '#667385',
+  NEUTRAL_600 = '#475667',
+  NEUTRAL_700 = '#344554',
+  NEUTRAL_800 = '#1D2B39',
+  NEUTRAL_900 = '#101B28',
+  // PRIMARY
+  PRIMARY_50 = '#EFFCE2',
+  PRIMARY_100 = '#DCF6C5',
+  PRIMARY_200 = '#A7E589',
+  PRIMARY_300 = '#83D86C',
+  PRIMARY_400 = '#5BC64F',
+  PRIMARY_500 = '#35B03B',
+  PRIMARY_600 = '#1E9737',
+  PRIMARY_700 = '#0C7B35',
+  PRIMARY_800 = '#005F32',
+  PRIMARY_900 = '#00452E',
+  // SECONDARY
+  SECONDARY_50 = '#FFF6ED',
+  SECONDARY_100 = '#FFEAD5',
+  SECONDARY_200 = '#FDDCAB',
+  SECONDARY_300 = '#FEB273',
+  SECONDARY_400 = '#FD853A',
+  SECONDARY_500 = '#FB6514',
+  SECONDARY_600 = '#EC4A0A',
+  SECONDARY_700 = '#C4320A',
+  SECONDARY_800 = '#9C2A10',
+  SECONDARY_900 = '#7E2410',
+  // YELLOW
+  YELLOW_50 = '#FFFAEB',
+  YELLOW_100 = '#FEF0C7',
+  YELLOW_200 = '#FEDF89',
+  YELLOW_300 = '#FEC84B',
+  YELLOW_400 = '#FDB022',
+  YELLOW_500 = '#F79009',
+  YELLOW_600 = '#DC6803',
+  YELLOW_700 = '#B54708',
+  YELLOW_800 = '#93370D',
+  YELLOW_900 = '#7A2E0E',
+  // RED
+  RED_50 = '#FEF3F2',
+  RED_100 = '#FEE4E2',
+  RED_200 = '#FECDCA',
+  RED_300 = '#FDA29B',
+  RED_400 = '#F97066',
+  RED_500 = '#F04438',
+  RED_600 = '#D92D20',
+  RED_700 = '#B42318',
+  RED_800 = '#912018',
+  RED_900 = '#7A271A',
+  // BLUE
+  BLUE_50 = '#E6EDFE',
+  BLUE_100 = '#C2D5FC',
+  BLUE_200 = '#92B3F9',
+  BLUE_300 = '#5F8FF7',
+  BLUE_400 = '#2F6EF4',
+  BLUE_500 = '#014EF2',
+  BLUE_600 = '#0142CE',
+  BLUE_700 = '#0137AC',
+  BLUE_800 = '#012C8A',
+  BLUE_900 = '#00236D',
+  // SEMANTIC
+  WARNING = '#F79009',
+  DANGER = '#D92D20',
+  SUCCESS = '#00BA3D',
+  INFORMATION = '#014EF2',
+  // SUPPORT
+  GREEN_YELLOW_50 = '#B2FF37',
+  PACIFIC_BLUE_100 = '#00BBC4',
+
+  // GRADIENT
+  // PRIMARY_600 45DEG GREEN_YELLOW_50
+  // PRIMARY_600 90DEG GREEN_YELLOW_50
+  // BLUE_500
+
+  // Other colors
+  WHITE = 'white',
+  BLACK = 'black',
+
+  TRANSPARENT = 'transparent',
+  TRANS_RGBA = 'rgba(0, 0, 0, 0)',
+
+  WHITE016 = 'rgba(255, 255, 255, 0.16)',
+  WHITE04 = 'rgba(255, 255, 255, 0.4)',
+  WHITE07 = 'rgba(255, 255, 255, 0.7)',
+  BLACK02 = 'rgba(0, 0, 0, 0.2)',
+  BLACK05 = 'rgba(0, 0, 0, 0.5)',
+  CYAN012 = 'rgba(0, 187, 196, 0.12)',
+
+  BG_DARK = '#F2F3F4',
+  BG_F5 = '#F5F5F5',
+
+  BG_BTN = '#ECEDEE',
+  BG_21 = '#212121',
+}
+
+export const GRAD_RANGE_259 = [
+  'rgba(0, 0, 0, 0.02)',
+  'rgba(0, 0, 0, 0.05)',
+  'rgba(0, 0, 0, 0.09)',
+];
+export const GRAD_RANGE_MASK = [
+  'rgba(255, 255, 255, 0)',
+  'rgba(255, 255, 255, 1)',
+  'rgba(255, 255, 255, 0)',
+];
+export const GRAD_RANGE_MASK_GRAY = [
+  'rgba(255, 255, 255, 0)',
+  'rgba(0, 0, 0, 0.5)',
+  'rgba(255, 255, 255, 0)',
+];
