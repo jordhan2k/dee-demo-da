@@ -6,7 +6,7 @@ const ITEM_MODEL = 'items';
 
 const itemModelBase = {
   name: { type: String },
-  description: { String },
+  description: { type: String },
   price: { type: Number, default: Math.floor(Math.random() * 10000) },
   imageUrl: { type: String }
 };
