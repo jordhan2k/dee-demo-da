@@ -67,7 +67,7 @@ const ListScreen = ({navigation}: any) => {
             indicatorStyle={'black'}
             maxToRenderPerBatch={50}
             data={dataItems?.items}
-            keyExtractor={item => item?._id}
+            keyExtractor={(item, index) => `${item?._id}-${index}`}
             renderItem={({item, index}: {item: Item; index: number}) => (
               <ListItem
                 {...item}

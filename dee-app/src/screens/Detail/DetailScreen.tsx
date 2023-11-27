@@ -81,7 +81,7 @@ const DetailScreen = ({navigation}: any) => {
             </Text>
             <Text style={styles.description}>Available from:</Text>
             <Text style={styles.descriptionText}>
-              {moment(dataDetail?.createAt).format('DD/MM/YYYY HH:mm')}
+              {moment(dataDetail?.createdAt).format('DD/MM/YYYY HH:mm')}
             </Text>
           </ScrollView>
         ) : null}

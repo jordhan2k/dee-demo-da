@@ -33,6 +33,7 @@ export default StyleSheet.create({
     width: 100,
     resizeMode: StyleSheet.absoluteFillObject,
     borderRadius: 10,
+    backgroundColor: Colors.NEUTRAL_200,
   },
   infoSection: {
     flex: 1,

@@ -38,5 +38,6 @@ export default StyleSheet.create({
     width: '100%',
     aspectRatio: 1,
     borderRadius: 16,
+    backgroundColor: Colors.NEUTRAL_200,
   },
 });
